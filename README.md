@@ -24,7 +24,7 @@ This project demonstrates how to read and write Excel files (`.xlsx`) using **Ap
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/bugnificent/apache-poi.git
    cd your-repo-name
 2. **Install Dependencies**:
 ```xml
