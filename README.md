@@ -1,70 +1,83 @@
-# Excel Read/Write with Selenium & Apache POI
+# Excel Automation with Apache POI, Cucumber BDD, and Selenium 🚀
 
-## Overview
-This repository demonstrates how to read and write values in an Excel (`.xlsx`) sheet using **Apache POI** in a Selenium automation framework. The project follows the **Cucumber BDD** approach.
+This project demonstrates how to read and write Excel files (`.xlsx`) using **Apache POI**, integrated with **Cucumber BDD** and **Selenium** for automated testing. It allows you to read values from an Excel file, perform actions based on the data, and write back the results (Pass/Fail) into the Excel file.
 
-## Technologies Used
-- **Java**
-- **Selenium WebDriver**
-- **Apache POI** (for Excel operations)
-- **Cucumber BDD**
-- **Maven**
+---
 
-## Setup
-### Prerequisites
-Ensure you have the following installed:
-- **Java (JDK 8 or higher)**
-- **Maven**
-- **Selenium WebDriver**
+## 🛠️ Technologies Used
+- **Apache POI**: For reading and writing Excel files.
+- **Cucumber BDD**: For behavior-driven development and test automation.
+- **Selenium**: For browser automation and UI testing.
+- **Maven**: For dependency management and project build.
 
-### Dependencies (pom.xml)
-Include the following dependencies in your `pom.xml`:
+---
 
-```xml
-<!-- Apache POI for Excel Read/Write -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi</artifactId>
-    <version>5.4.0</version>
-</dependency>
+## 📋 Prerequisites
+- Java JDK 8 or higher
+- Maven installed
+- ChromeDriver or any other WebDriver executable
+- An Excel file (`.xlsx`) for test data
 
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>5.4.0</version>
-</dependency>
+---
+
+## ⚙️ Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+2. **Install Dependencies**:
+```bash
+   <dependencies>
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.28.1</version>
+        </dependency>
+
+        <!-- Cucumber -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.20.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.4.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.20.1</version>
+        </dependency>
+   <dependencies>
 ```
+## 🚀 Running the Tests
+- Run Cucumber Tests:
+- Use the following command to execute the Cucumber tests:
 
-## Feature File (Cucumber BDD)
-Below is the `.feature` file used for reading and writing Excel data in a Selenium test:
-
-```gherkin
-Feature: As an admin, I should be able to control Excel
-
-  @excel
-  Scenario: I need to read/write values
-    When I read username and password "US01-AC01-TC03"
-    Then test needs to pass "US01-AC02-TC01"
+```bash
+mvn test
 ```
+Check Results:
+After the tests run, the results (Pass/Fail) will be written back to the Excel file in the specified column.
 
-## How to Run
-1. Clone the repository:
-   ```sh
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd <project-folder>
-   ```
-3. Execute tests using Maven:
-   ```sh
-   mvn test
-   ```
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Contribution
-Feel free to fork the repository and submit pull requests for improvements.
-
-## License
-This project is licensed under the **MIT License**.
-
+## 🙌 Contributing
+Feel free to open issues or submit pull requests for improvements. Contributions are welcome!
 
