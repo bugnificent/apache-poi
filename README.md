@@ -15,7 +15,6 @@ This project demonstrates how to read and write Excel files (`.xlsx`) using **Ap
 ## 📋 Prerequisites
 - Java JDK 8 or higher
 - Maven installed
-- ChromeDriver or any other WebDriver executable
 - An Excel file (`.xlsx`) for test data
 
 ---
@@ -24,8 +23,8 @@ This project demonstrates how to read and write Excel files (`.xlsx`) using **Ap
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/bugnificent/apache-poi.git
+   cd apache-poi
 2. **Install Dependencies**:
 ```xml
    <dependencies>
@@ -89,7 +88,7 @@ Check Results:
 After the tests run, the results (Pass/Fail) will be written back to the Excel file in the specified column.
 
 ## 📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the [MIT License.](LICENSE) See the LICENSE file for details.
 
 ## 🙌 Contributing
 Feel free to open issues or submit pull requests for improvements. Contributions are welcome!
