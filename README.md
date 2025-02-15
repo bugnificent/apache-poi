@@ -88,7 +88,7 @@ Check Results:
 After the tests run, the results (Pass/Fail) will be written back to the Excel file in the specified column.
 
 ## 📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the [MIT License.] See the (LICENSE) file for details.
 
 ## 🙌 Contributing
 Feel free to open issues or submit pull requests for improvements. Contributions are welcome!
