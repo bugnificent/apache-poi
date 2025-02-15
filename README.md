@@ -65,6 +65,19 @@ This project demonstrates how to read and write Excel files (`.xlsx`) using **Ap
         </dependency>
    <dependencies>
 ```
+### ⚠️ Before Running Tests
+- Make sure Test Case Number at the beginning of the Scenario.(Not space sensitive)
+
+## 📝 Example Feature File
+```gherkin
+Feature: As an admin i should be able to control excel
+
+  @excel
+  Scenario: US01-AC01-TC01 I need to read/write values
+    When i read username and password "US01-AC01-TC01"
+    Then test needs to pass
+```
+
 ## 🚀 Running the Tests
 - Run Cucumber Tests:
 - Use the following command to execute the Cucumber tests:
