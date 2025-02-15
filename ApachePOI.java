@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 
 public class ApachePOI {
 
+    //Method chaining purposes nothing special
     BrowserUtils browserUtils = new BrowserUtils();
 
     @When("i read username and password {string}")

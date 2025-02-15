@@ -16,6 +16,12 @@ import java.util.Set;
 public class BrowserUtils {
 
 
+    /**
+     * Method for find username for the specified cell using testCase as an argument, its possible to use indexes
+     * to move right, but since cells doesnt change at all safe to use this approach.
+     * @param testCase
+     * @return
+     */
     public BrowserUtils findUsername(String testCase) {
         String filePath = ConfigurationReader.getProperty("filePath");
         try (FileInputStream fileInputStream = new FileInputStream(filePath);
@@ -47,6 +53,12 @@ public class BrowserUtils {
 
         return this;
     }
+
+    /**
+     * Same approach as findUsername.
+     * @param testCase
+     * @return
+     */
 
     public BrowserUtils findPassword(String testCase) {
         String filePath = ConfigurationReader.getProperty("filePath");
@@ -82,6 +94,11 @@ public class BrowserUtils {
 
     }
 
+    /**
+     * Method for Test Case status change, can be simplified of course.
+     * @param testCase
+     * @return
+     */
     public BrowserUtils pass(String testCase){
 
         String filePath = ConfigurationReader.getProperty("filePath");
@@ -120,6 +137,11 @@ public class BrowserUtils {
 
     }
 
+    /**
+     * Method for Test Case status change, can be simplified of course.
+     * @param testCase
+     * @return
+     */
     public BrowserUtils fail(String testCase){
 
         String filePath = ConfigurationReader.getProperty("filePath");
