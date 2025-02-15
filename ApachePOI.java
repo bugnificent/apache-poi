@@ -12,12 +12,13 @@ public class ApachePOI {
     public void i_read_username_and_password(String testCaseNumber) {
         browserUtils.findUsername(testCaseNumber)
                 .findPassword(testCaseNumber);
+        //Assert.fail("Debug!");
     }
 
 
     @Then("test needs to pass {string}")
     public void test_needs_to_pass(String testCaseNumber) {
-        browserUtils.pass(testCaseNumber);
+
     }
 }
 
