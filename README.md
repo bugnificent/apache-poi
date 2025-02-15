@@ -15,7 +15,6 @@ This project demonstrates how to read and write Excel files (`.xlsx`) using **Ap
 ## 📋 Prerequisites
 - Java JDK 8 or higher
 - Maven installed
-- ChromeDriver or any other WebDriver executable
 - An Excel file (`.xlsx`) for test data
 
 ---
