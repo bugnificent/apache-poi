@@ -8,6 +8,7 @@ This project demonstrates how to read and write Excel files (`.xlsx`) using **Ap
 - **Apache POI**: For reading and writing Excel files.
 - **Cucumber BDD**: For behavior-driven development and test automation.
 - **Selenium**: For browser automation and UI testing.
+- **JUnit4**: For annotations and TDD
 - **Maven**: For dependency management and project build.
 
 ---
