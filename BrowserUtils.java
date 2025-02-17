@@ -35,6 +35,7 @@ public class BrowserUtils {
                 if (testCaseCell != null && testCaseCell.getStringCellValue().equals(testCase)) {
                     Cell usernameCell = row.getCell(7); // Password number column
                     if (usernameCell != null) {
+                        //I included other test-datas in my Cell like URL thats why i used split and trim, may not be necessary.
                         String password = usernameCell.getStringCellValue().trim().split(",")[1].trim().split(":")[1].trim();
                         System.out.println("Username: " + password);
                         found = true;
